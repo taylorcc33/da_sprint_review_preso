@@ -15,19 +15,79 @@ body {
 }
 
 h1 {
-  font-family: 'Input Mono Narrow';
-  font-weight: 400;
-  font-size: 3.5rem;
+  font-family: 'Fira Code';
+  font-weight: 300;
+  font-size: 4 rem;
   text-align: center;
   margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.joist {
+  font-family: 'Pirata One';
+  font-size: 40px;
+}
+
+/* Container styling for terminal window */
+.terminal-window {
+  background-color: #2b2b2b; /* Dark background for terminal */
+  color: #fff; /* Light text color */
+  font-family: 'Courier New', Courier, monospace; /* Monospace font */
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+/* CSS animation for typing effect */
+@keyframes typing-and-waiting {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 70%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+/* CSS animation for cursor blinking */
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #7f7;
+  }
+}
+
+/* Styling for the terminal-like text */
+.terminal-text {
+  width: 60%;
+  display: inline-block;
+  border-right: 0.15em solid #7f7; /* Cursor color */
+  white-space: nowrap;
+  overflow: hidden;
+  /* Start with 0 width, expand to full width, wait, then restart */
+  animation: typing-and-waiting 6s steps(30, end) infinite,
+    blink 1s step-end infinite;
+}
+
+.term {
+  width: 60%;
+  margin: 0 auto; /* Center the element horizontally */
 }
 
 .titleImage {
-  margin: 0px 200px 10px 200px;
+  display: flex;
+  margin: 80px auto 160px auto;
+  width: 45%;
+  height: auto;
 }
 
 .row {
-  margin: 20px 200px 20px 200px;
+  margin: 80px 500px 400px 500px;
 }
 
 .teamLayout {
@@ -43,23 +103,41 @@ h1 {
 }
 
 .name {
-  color: #007bff;
+  font-family: 'Pirata One';
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
   margin-bottom: 20px;
 }
 
-.button {
+.personImage {
+  margin: 0 auto;
   display: block;
-  background: #007bff;
-  color: #fff;
+  text-align: center;
+}
+
+.button {
+  margin: 40px auto;
+  display: block;
+  text-align: center;
+  font-family: 'Pirata One';
+  font-size: 20px;
+  display: block;
+  background: black;
+  color: greenyellow;
   padding: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 20px;
+  padding: 20px;
 }
 
 .button:hover {
-  background: #0056b3;
+  background: greenyellow;
+  color: black;
 }
 
 .work {
