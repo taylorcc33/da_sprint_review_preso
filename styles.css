@@ -62,7 +62,6 @@ h1 {
   }
 }
 
-/* Styling for the terminal-like text */
 .terminal-text {
   width: 60%;
   display: inline-block;
@@ -145,7 +144,6 @@ h1 {
   color: #666;
 }
 
-/* You can toggle this class with JavaScript when the button is clicked */
 .show {
   display: block;
 }
